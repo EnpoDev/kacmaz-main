@@ -1,4 +1,5 @@
 import logo from "../../assets/img/logo.png";
+import {Link} from "react-router";
 
 export default function Header({loginModal, setLoginModal}) {
 
@@ -6,16 +7,16 @@ export default function Header({loginModal, setLoginModal}) {
     return (
         <header className="bg-[#486078] lg:py-4 py-4 px-5 lg:px-0">
             <div className="container mx-auto flex items-center justify-between">
-                <a href=""><img className="md:w-[170px] w-[100px] lg:h-[30px] h-[20px]" src={logo}
+                <a href="/"><img className="md:w-[170px] w-[100px] lg:h-[30px] h-[20px]" src={logo}
                                 alt=""/></a>
                 <div className="md:flex items-center gap-5 text-white text-xs hidden">
                     <button className="py-2 px-4 bg-green-500 rounded-lg">
                         Evinizi Kiralayalım
                     </button>
-                    <a href="profesyoneller.html" className="py-2 px-4 border border-white rounded-lg">
+                    <Link to="/profesyoneller" className="py-2 px-4 border border-white rounded-lg">
                         <i className="ri-wallet-line ri-lg"></i>
                         Profesyoneller
-                    </a>
+                    </Link>
                     <button className="py-2 px-4 border border-white rounded-lg">
                         <i className="ri-wallet-line ri-lg"></i>
                         Kira Öde

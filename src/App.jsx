@@ -4,6 +4,7 @@ import Home from "./Screens/Home.jsx";
 import './assets/css/style.css';
 import './assets/css/default.css';
 import './assets/css/swiper-bundle.min.css';
+import ProfesyonellerPage from "./Screens/ProfesyonellerPage.jsx";
 
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
         {
             path: "/",
             element: <Home/>,
-        },
+        }, {
+            path: "/profesyoneller",
+            element: <ProfesyonellerPage/>,
+        }
     ]);
 
     return (
