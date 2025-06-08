@@ -461,7 +461,7 @@ const CompanyFilterPage = () => {
         <div className="font-sans overflow-x-hidden bg-gray-50 min-h-screen">
             {/* Scroll to Top Button */}
             <Header></Header>
-            
+
             {showScrollTop && (
                 <button
                     onClick={scrollToTop}

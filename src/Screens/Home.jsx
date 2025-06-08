@@ -5,6 +5,9 @@ import LoginModal from "../components/home/loginModal.jsx";
 import RealEstateListings from "../components/home/RealEstateListings.jsx";
 import Footer from "../components/public/footer.jsx";
 import InteriorDesignAI from "../components/home/InteriorDesignAI.jsx";
+import Decoration from "../components/home/Decoration.jsx";
+import EviminDegeri from "../components/home/EviminDegeri.jsx";
+import Emlakharita from "../components/home/EmlakHarita.jsx";
 
 export default function Home() {
     const [activeTab, setActiveTab] = useState('tab1');
@@ -26,11 +29,25 @@ export default function Home() {
                 <RealEstateListings/>
             )}
             {(activeTab === 'tab7' ||
-                activeTab === 'tab8' ||
-                activeTab === 'tab9' ||
-                activeTab === 'tab10') && (
+                activeTab === 'tab9') && (
                 <InteriorDesignAI/>
             )}
+
+            {
+                activeTab === 'tab8' &&
+                <EviminDegeri />
+            }
+
+            {
+                activeTab === 'tab10' &&
+                <Decoration/>
+            }
+
+            {
+                activeTab === 'tab11' &&
+                <Emlakharita />
+            }
+
             <Footer/>
         </div>
     );

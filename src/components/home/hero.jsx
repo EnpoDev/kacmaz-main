@@ -125,6 +125,15 @@ export default function Hero({activeTab, setActiveTab}) {
                         onClick={() => handleTabClick('tab10')}
                     > Dekorasyon Fikirleri
                     </button>
+                    <button
+                        className={`px-4 py-2 text-sm font-medium rounded-t-lg transition-all ${
+                            activeTab === 'tab11'
+                                ? 'bg-white text-gray-800 border-b-2 border-white'
+                                : 'bg-blue-600 text-white hover:bg-blue-700'
+                        }`}
+                        onClick={() => handleTabClick('tab11')}
+                    > Emlak Harita
+                    </button>
                 </div>
 
                 {/* Search Form */}
