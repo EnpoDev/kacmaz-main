@@ -5,6 +5,7 @@ import './assets/css/style.css';
 import './assets/css/default.css';
 import './assets/css/swiper-bundle.min.css';
 import ProfesyonellerPage from "./Screens/ProfesyonellerPage.jsx";
+import CompanyDetailPage from "./Screens/ProfesyonellerDetail.jsx";
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
         }, {
             path: "/profesyoneller",
             element: <ProfesyonellerPage/>,
+        }, {
+            path: "/profesyoneller/:id",
+            element: <CompanyDetailPage/>,
         }
     ]);
 
