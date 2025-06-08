@@ -134,7 +134,7 @@ const InteriorDesignAI = () => {
     };
 
     return (
-        <div className="py-16 px-5 lg:px-0 bg-gray-50 min-h-screen">
+        <div className="py-16 px-32 bg-gray-50 min-h-screen">
             <div className="container mx-auto rounded-2xl">
                 <h1 className="text-center text-zinc-700 md:text-4xl text-xl font-extrabold mb-6">
                     Alan Seç ve Yapay Zeka İle Düzenle

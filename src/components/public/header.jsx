@@ -5,7 +5,7 @@ export default function Header({loginModal, setLoginModal}) {
 
 
     return (
-        <header className="bg-[#486078] lg:py-4 py-4 px-5 lg:px-0">
+        <header className="bg-[#486078] lg:py-4 py-4 px-32 ">
             <div className="container mx-auto flex items-center justify-between">
                 <a href="/"><img className="md:w-[170px] w-[100px] lg:h-[30px] h-[20px]" src={logo}
                                 alt=""/></a>

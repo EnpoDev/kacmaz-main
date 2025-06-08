@@ -1,0 +1,4311 @@
+import React from 'react';
+import Header from "../../components/public/header.jsx";
+import Footer from "../../components/public/footer.jsx";
+
+const Duzenleme = () => {
+  return (
+    <>
+      <button id="scrollToTop" className="fixed bottom-10 right-10 py-2 px-3 rounded-lg bg-turuncu text-white rounded-lgshadow-lg transition hidden z-[999999]">
+            <i className="ri-arrow-up-line ri-lg"></i>
+          </button>
+
+          <Header />
+
+          <div className="py-3 px-32 bg-[#f4f4f4] hidden md:block">
+            <div className="container mx-auto flex items-center justify-between text-sm">
+              <a href="" className="py-2 px-3 text-white bg-[#FF5A01] rounded-lg">Satılık</a>
+              <a href="" className="py-2 px-3">Kiralık</a>
+              <a href="" className="py-2 px-3">Projeler</a>
+              <a href="" className="py-2 px-3">Ortak</a>
+              <a href="" className="py-2 px-3">Broker & Danışman</a>
+              <a href="" className="py-2 px-3">Mimar/Mühendis</a>
+              <a href="" className="py-2 px-3">Profesyoneller</a>
+              <a href="" className="py-2 px-3">Sen Sat/Kirala</a>
+              <a href="" className="py-2 px-3">Sanal Sahneleme</a>
+              <a href="" className="py-2 px-3">Firma Rehberi</a>
+              <a href="" className="py-2 px-3">Dekorasyon</a>
+              <a href="" className="py-2 px-3">Hizmetlerimiz</a>
+              <a href="" className="py-2 px-3">Mağaza</a>
+            </div>
+          </div>
+          <section className="bg-[url('../img/banner.jpeg')] bg-cover bg-no-repeat lg:h-[400px] h-[300px] relative">
+            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="flex flex-col items-center justify-center gap-4 h-full relative z-50 text-white text-center px-5 lg:px-0"></div>
+          </section>
+          <section className="container mx-auto py-12 px-32">
+            <div className="flex flex-col-reverse md:flex-row items-start gap-5">
+              <div className="md:w-1/4 md:-mt-80 relative z-50">
+                <div className="space-y-3 text-center pb-4">
+                  <p className="md:text-white text-2xl font-medium">
+                    <span className="text-3xl">4.8/5</span>
+                    Kaç Puan
+                  </p>
+                  <div className="flex items-center justify-center gap-2">
+                    <i className="ri-star-fill ri-xl text-[#FFD45E]"></i>
+                    <i className="ri-star-fill ri-xl text-[#FFD45E]"></i>
+                    <i className="ri-star-fill ri-xl text-[#FFD45E]"></i>
+                    <i className="ri-star-fill ri-xl text-[#FFD45E]"></i>
+                    <i className="ri-star-fill ri-xl text-[#FFD45E]"></i>
+                  </div>
+                  <button className="py-2 px-3 text-white bg-turuncu rounded-lg">Bir Değerlendirme Yazın</button>
+                  <div className="flex items-center justify-center gap-3">
+                    <p className="md:text-white text-sm">
+                      5 yıldız üzerinden
+                      <span>4.9</span>
+                      yıldız
+                    </p>
+                    <i className="ri-circle-fill text-white ri-xs"></i>
+                    <p className="md:text-white text-sm">500+ yorum</p>
+                  </div>
+                </div>
+                <div className=" bg-white rounded-lg border p-3 space-y-5 ">
+                  <div className="flex flex-col items-center gap-2">
+                    <img className="w-[300px] h-[400px] object-cover" src="./view/img/pp-page.jpg" alt="" />
+                    <div className="space-y-1.5 text-center w-full">
+                      <h3 className="text-2xl font-semibold">Yaşar Tan</h3>
+                      <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                      <h3 className="text-green-500 text-sm">Doğrulanmış Profil</h3>
+                      <p>Gayrimenkul Danışmanı</p>
+                      <h4>
+                        <i className="ri-map-pin-line ri-lg"></i>
+                        Bursa/ Osmangazi
+                      </h4>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div className="grid grid-cols-3 gap-2">
+                      <button className="py-2 px-5 text-white rounded-lg bg-[#FF5A01] text-sm w-ful">Beğen</button>
+                      <button className="py-2 px-5 text-white rounded-lg bg-[#FF5A01] text-sm w-ful">Paylaş</button>
+                      <button className="py-2 px-5 text-white rounded-lg bg-[#FF5A01] text-sm w-ful">Takip Et</button>
+                    </div>
+                  </div>
+                  <div className="border rounded-lg">
+                    <div className="flex items-center justify-between text-sm py-2 px-3 border-b">
+                      <h5>Profil Görüntülenme</h5>
+                      <span className="text-gray-400">592.287</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm py-2 px-3 border-b">
+                      <h5>Beğeni</h5>
+                      <span className="text-gray-400">58.653</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm py-2 px-3 border-b">
+                      <h5>Takipçi</h5>
+                      <span className="text-gray-400">1.169</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm py-2 px-3 border-b">
+                      <h5>Son Görülme</h5>
+                      <span className="text-gray-400">3 Gün Önce</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm py-2 px-3">
+                      <h5>Ort. Yanıt Süresi</h5>
+                      <span className="text-gray-400">5 saat</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-medium">Uzmanlık Alanlarım</h4>
+                    <div className="load-more-container mt-3">
+                      <div className="content-list flex items-center gap-2 flex-wrap">
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Boya</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">İzalasyon</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Parke</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Zemin Kaplama</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <button className="load-more-btn text-xs underline decoration-[#FF5A01] text-[#FF5A01]">Tümünü Gör</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-medium">Uzmanlık Bölgem</h4>
+                    <div className="load-more-container mt-3">
+                      <div className="content-list flex items-center gap-2 flex-wrap">
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Ankara</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Bursa</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">İstanbul</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">İzmir</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Kayseri</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Sivas</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <div className="item bg-[#537DA6] rounded-full text-white text-sm py-1 px-2 hidden">Alçıpan</div>
+                        <button className="load-more-btn text-xs underline decoration-[#FF5A01] text-[#FF5A01]">Tümünü Gör</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="border rounded-lg">
+                    <div className="flex items-center justify-between text-sm py-2 px-3 border-b">
+                      <h5>Yabancı Dil</h5>
+                      <span className="text-gray-400">Türkçe, İngilizce, Arapça</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm py-2 px-3 border-b">
+                      <h5>Eğitim Durumu</h5>
+                      <span className="text-gray-400">Yüksek Lisans</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm py-2 px-3 border-b">
+                      <h5>Memleket</h5>
+                      <span className="text-gray-400">Kayseri</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm py-2 px-3">
+                      <h5>Mesleki Deneyim</h5>
+                      <span className="text-gray-400">+6 Yıl</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-medium">Sosyal Medya</h4>
+                    <div className="inline-flex mt-3 gap-2">
+                      <a href=""><img src="./view/img/facebook.png" alt="" /></a>
+                      <a href=""><img src="./view/img/instagram.png" alt="" /></a>
+                      <a href=""><img src="./view/img/youtube.png" alt="" /></a>
+                      <a href=""><img src="./view/img/twitter.png" alt="" /></a>
+                    </div>
+                  </div>
+                  <div className="border p-2 rounded-lg space-y-2">
+                    <h4>Yaşar ile iletişime geçin</h4>
+                    <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="Ad Soyad" />
+                    <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="Telefon" />
+                    <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="E-Posta" />
+                    <textarea name="" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" placeholder="Konu" id="" rows="4"></textarea>
+                    <div className="inline-flex items-center gap-2">
+                      <input type="checkbox" name="" id="" />
+                      <p className="text-xs">Bu formu göndererek Kullanım Şartlarını kabul ediyorum.</p>
+                    </div>
+                    <button className="py-1.5 w-full bg-turuncu rounded-lg text-white text-sm">Ekip ile İletişime Geçin</button>
+                  </div>
+                  <div className="border p-2 rounded-lg space-y-3">
+                    <h4 className="font-medium">Kaç M2’de birlikte çalışın</h4>
+                    <p>
+                      Bu acenteyle iletişime geçebilir ve listelerden doğrudan tur talebinde bulunabilirsiniz. 
+                      <a href="" className="text-turuncu">Daha fazla bilgi edinin</a>
+                    </p>
+                    <button className="py-1.5 w-full bg-turuncu rounded-lg text-white text-sm">Temsilciniz olarak ekleyin</button>
+                  </div>
+                  <div>
+                    <h4 className="font-medium">Linkler</h4>
+                    <div className="border rounded-lg">
+                      <div className="flex items-center justify-between text-sm py-2 px-3 border-b">
+                        <h5>Sahibinden.com</h5>
+                        <a href=""><i className="ri-arrow-right-up-line ri-lg"></i></a>
+                      </div>
+                      <div className="flex items-center justify-between text-sm py-2 px-3 border-b">
+                        <h5>R10.net</h5>
+                        <a href=""><i className="ri-arrow-right-up-line ri-lg"></i></a>
+                      </div>
+                      <div className="flex items-center justify-between text-sm py-2 px-3">
+                        <h5>Emlakjet.com</h5>
+                        <a href=""><i className="ri-arrow-right-up-line ri-lg"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="md:w-3/4 ">
+                <div className="tabs border p-2 flex items-center flex-wrap lg:justify-between rounded-lg text-sm">
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="ilan-bilgi">İlan Bilgileri</button>
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="hakkimda">Hakkımda</button>
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="satilik">Satılık Portföyler (50)</button>
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="kiralik">Kiralık Portföyler (50)</button>
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="portfoy">Portföylerim (100)</button>
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="uzmanlik">Uzmanlık Alanlarım</button>
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="ekibimiz">Ekibimiz</button>
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="yorumlar">Müşteri Yorumları</button>
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="tapu-teslim">Tapu Teslim</button>
+                  <button className="tab-btn px-1.5 py-1 text-gray-600 rounded-lg focus:outline-none" data-tab="ulasin">Bize Ulaşın</button>
+                </div>
+                <div id="ilan-bilgi" className="tab-content pt-4 lg:space-y-8 space-y-4">
+                  <div className="lg:text-base text-sm">
+                    <div className="flex items-center md:justify-end gap-2">
+                      <a href=""><img src="./view/img/instagram.png" alt="" /></a>
+                      <a href=""><img src="./view/img/whatsapp.png" alt="" /></a>
+                      <a href=""><img src="./view/img/facebook.png" alt="" /></a>
+                      <a href=""><img src="./view/img/twitter.png" alt="" /></a>
+                      <a href=""><img src="./view/img/linkedin.png" alt="" /></a>
+                    </div>
+                    <div className="flex flex-col md:flex-row lg:items-center justify-between mt-3 gap-2 lgh:gap-0">
+                      <div className="inline-flex flex-wrap items-center gap-1">
+                        <a href="">Ana Sayfa</a>
+                        <i className="ri-arrow-right-s-line ri-lg"></i>
+                        <a href="">Emlak</a>
+                        <i className="ri-arrow-right-s-line ri-lg"></i>
+                        <a href="">Konut</a>
+                        <i className="ri-arrow-right-s-line ri-lg"></i>
+                        <a href="">Satılık</a>
+                        <i className="ri-arrow-right-s-line ri-lg"></i>
+                        <a href="">Satılık Villa</a>
+                        <i className="ri-arrow-right-s-line ri-lg"></i>
+                        <a href="">İstanbul</a>
+                        <i className="ri-arrow-right-s-line ri-lg"></i>
+                        <a href="">Sarıyer</a>
+                        <i className="ri-arrow-right-s-line ri-lg"></i>
+                        <a href="">Yeniköy Satılık Villa</a>
+                      </div>
+                      <div className="inline-flex items-center gap-1">
+                        <a href="">Favori İlanlarım</a>
+                        <span>-</span>
+                        <a href="">Favori Aramalarım</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-3 grid-cols-2 gap-5">
+                    <div className="lg:col-span-2 lg:row-span-2 relative">
+                      <div className="flex items-center gap-1 flex-wrap p-2 absolute">
+                        <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">3D Görüntüleme</div>
+                        <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Kat Planı</div>
+                        <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Sokak Görünümü</div>
+                      </div>
+                      <img className="rounded-lg lg:h-[650px] lg:w-[750px] object-cover" src="./view/img/ilan-gorsel3.png" alt="" />
+                      <div className="absolute bottom-3 right-3">
+                        <button className=" bg-turuncu/80 py-2 px-4 rounded-lg text-white">Taşınmaz No: #123456789</button>
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <img className="rounded-lg" src="./view/img/ilan-gorsel3.png" alt="" />
+                    </div>
+                    <div className="relative">
+                      <div className="flex items-center gap-1 flex-wrap p-2 absolute bottom-0 right-0">
+                        <a href="" className="text-white text-lg bg-[#486078] py-1 px-2 rounded-full">30 Fotoğraf</a>
+                      </div>
+                      <img className="rounded-lg" src="./view/img/ilan-gorsel3.png" alt="" />
+                    </div>
+                  </div>
+                  <div className="flex flex-col lg:flex-row items-start justify-between gap-2 lg:gap-0">
+                    <div className="">
+                      <div className="inline-flex gap-4">
+                        <p className="lg:text-xl text-sm text-turuncu">
+                          İlan No:
+                          <span className="font-semibold text-black">#123456789</span>
+                        </p>
+                        <p className="lg:text-xl text-sm text-turuncu">
+                          İlan Tarihi:
+                          <span className="font-semibold text-black">28 Şubat 2024</span>
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-xl mb-2">Bursa / Mudanya / Eryetiş Mah.</p>
+                        <div className="inline-flex items-center gap-2 mt-7">
+                          <p className="text-3xl font-semibold">
+                            1.500.000
+                            <span>₺</span>
+                          </p>
+                          <span className="text-3xl font-semibold">/</span>
+                          <img src="./view/img/icon.png" alt="" />
+                        </div>
+                        <div className="flex items-center justify-between p-2 border mt-2 rounded-lg focus:outline-none">
+                          <input type="text" className="placeholder-black lg:text-lg text-sm focus:outline-none" name="" id="" placeholder="Fiyat Teklifi Verin" />
+                          <button data-target="teklif" className="p-1 rounded-lg bg-turuncu open-popup">
+                            <i className="ri-arrow-right-s-line ri-lg text-white"></i>
+                          </button>
+                          <div id="teklif" className="popup-overlay hidden fixed inset-0 bg-black bg-opacity-50 z-[999999999]" style={{display: "none"}}>
+                            <div className="flex items-center justify-center h-full">
+                              <div className="popup-content bg-white md:w-[400px] md:h-[730px] h-[500px] p-5 rounded-lg shadow-lg md:overflow-y-auto relative">
+                                <button className="close-popup absolute top-3 right-3 text-gray-600 text-xl">✖</button>
+                                <h2 className="text-xl font-semibold mb-3">Fiyat Teklif Formu</h2>
+                                <div className="space-y-2">
+                                  <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="Ad" />
+                                  <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="Soyad" />
+                                  <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="Telefon" />
+                                  <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="Teklifim" />
+                                  <textarea name="" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" placeholder="Konu" id="" rows="4"></textarea>
+                                  <div className="inline-flex items-center gap-2">
+                                    <input type="checkbox" name="" id="" />
+                                    <p className="text-xs">Bu formu göndererek Kullanım Şartlarını kabul ediyorum.</p>
+                                  </div>
+                                  <button className="py-1.5 w-full bg-turuncu rounded-lg text-white text-sm">Mesaj Gönder</button>
+                                </div>
+                                <img className="w-full h-[250px] mt-6 hidden md:block" src="./view/img/popup.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="grid grid-cols-3 gap-3 text-center">
+                        <a
+                          href="#ilan-aciklamasi"
+                          className="py-2 px-3 text-turuncu rounded-lg border border-turuncu lg:text-sm text-xs hover:bg-turuncu hover:text-white transition-all duration-500"
+                        >
+                          İlan Açıklaması
+                        </a>
+                        <a
+                          href="#konum"
+                          className="py-2 px-3 text-turuncu rounded-lg border border-turuncu lg:text-sm text-xs hover:bg-turuncu hover:text-white transition-all duration-500"
+                        >
+                          Konum
+                        </a>
+                        <a
+                          href="#sokak-gorunumu"
+                          className="py-2 px-3 text-turuncu rounded-lg border border-turuncu lg:text-sm text-xs hover:bg-turuncu hover:text-white transition-all duration-500"
+                        >
+                          Sokak Görünümü
+                        </a>
+                        <a
+                          href="#video"
+                          className="py-2 px-3 text-turuncu rounded-lg border border-turuncu lg:text-sm text-xs hover:bg-turuncu hover:text-white transition-all duration-500"
+                        >
+                          Video
+                        </a>
+                        <a
+                          href="galeri_gallery.html"
+                          className="py-2 px-3 text-turuncu rounded-lg border border-turuncu lg:text-sm text-xs hover:bg-turuncu hover:text-white transition-all duration-500"
+                        >
+                          Fotoğraf
+                        </a>
+      
+                        <a
+                          href="#sanal-tur"
+                          className="py-2 px-3 text-turuncu rounded-lg border border-turuncu lg:text-sm text-xs hover:bg-turuncu hover:text-white transition-all duration-500"
+                        >
+                          Sanal Tur
+                        </a>
+                        <a
+                          href="kredi-hesaplama_credit-calculation.html"
+                          className="py-2 px-3 text-turuncu rounded-lg border border-turuncu lg:text-sm text-xs hover:bg-turuncu hover:text-white transition-all duration-500"
+                        >
+                          Kredi Hesaplama
+                        </a>
+                        <a
+                          href=""
+                          className="py-2 px-3 text-turuncu rounded-lg border border-turuncu lg:text-sm text-xs hover:bg-turuncu hover:text-white transition-all duration-500"
+                        >
+                          Favorilerime Ekle
+                        </a>
+                        <a
+                          href=""
+                          className="py-2 px-3 text-turuncu rounded-lg border border-turuncu lg:text-sm text-xs hover:bg-turuncu hover:text-white transition-all duration-500"
+                        >
+                          Paylaş
+                        </a>
+                        <a href="" className="py-2 px-3 text-white rounded-lg border border-turuncu lg:text-sm text-xs bg-turuncu hover:text-white transition-all duration-500">
+                          PDF İndir
+                        </a>
+                        <a
+                          href=""
+                          className="py-2 px-3 text-white rounded-lg border border-mavi lg:text-sm text-xs bg-mavi hover:text-white transition-all duration-500 col-span-2"
+                        >
+                          Expertiz Raporu
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="py-2 px-4 border bg-white shadow-lg rounded-lg">
+                    <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">İlan Detayları</h4>
+                      <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                    </div>
+                    <div className="accordion-content max-md:hidden">
+                      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-4 gap-3 mt-3">
+                        <div className="space-y-4 flex flex-col">
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/0_emlak_tipi.svg" alt="" />
+                            <h6>Emlak Tipi:</h6>
+                            <span className="font-semibold">Satılık Daire</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/1_m2_fiyati.svg" alt="" />
+                            <h6>m² Fiyatı:</h6>
+                            <span className="font-semibold">1.500.000 ₺</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/2_brut_m2.svg" alt="" />
+                            <h6>m² (Brüt):</h6>
+                            <span className="font-semibold">144</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/3_net_m2.svg" alt="" />
+                            <h6>m² (Net):</h6>
+                            <span className="font-semibold">140</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/4_oda_sayisi.svg" alt="" />
+                            <h6>Oda Sayısı:</h6>
+                            <span className="font-semibold">3+1</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/5_bina_yasi.svg" alt="" />
+                            <h6>Bina Yaşı:</h6>
+                            <span className="font-semibold">1</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/6_bulundugu_kat.svg" alt="" />
+                            <h6>Bulunduğu Kat:</h6>
+                            <span className="font-semibold">7</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/7_kat_sayisi.svg" alt="" />
+                            <h6>Kat Sayısı:</h6>
+                            <span className="font-semibold">9</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/8_isinma.svg" alt="" />
+                            <h6>Isıtma:</h6>
+                            <span className="font-semibold">Yerden Isıtma</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/9_banyo.svg" alt="" />
+                            <h6>Banyo Sayısı:</h6>
+                            <span className="font-semibold">2</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/10_mutfak.svg" alt="" />
+                            <h6>Mutfak:</h6>
+                            <span className="font-semibold">Kapalı</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/11_balkon.svg" alt="" />
+                            <h6>Balkon:</h6>
+                            <span className="font-semibold">Var</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/12_asansor.svg" alt="" />
+                            <h6>Asansör</h6>
+                            <span className="font-semibold">Var</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/13_otopark.svg" alt="" />
+                            <h6>Otopark:</h6>
+                            <span className="font-semibold">Açık & Kapalı Otopark</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/bolum.svg" alt="" />
+                            <h6>Bölüm & Oda Sayısı:</h6>
+                            <span className="font-semibold">5</span>
+                          </div>
+                        </div>
+                        <div className="space-y-4 flex flex-col">
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/14_otopark_sayisi.svg" alt="" />
+                            <h6>Otopark Sayısı:</h6>
+                            <span className="font-semibold">2</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/15_esyali.svg" alt="" />
+                            <h6>Eşyalı:</h6>
+                            <span className="font-semibold">Hayır</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/kullanim_durumu.svg" alt="" />
+                            <h6>Kullanım Durumu:</h6>
+                            <span className="font-semibold">Kiracılı</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/16_site_icerisinde.svg" alt="" />
+                            <h6>Site İçerisinde:</h6>
+                            <span className="font-semibold">Evet</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/17_site_adi.svg" alt="" />
+                            <h6>Site Adı:</h6>
+                            <span className="font-semibold">Belirtilmemiş</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/18_aidat.svg" alt="" />
+                            <h6>Aidat (TL):</h6>
+                            <span className="font-semibold">4000 ₺</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/19_Krediye_uygun.svg" alt="" />
+                            <h6>Krediye Uygun:</h6>
+                            <span className="font-semibold">Evet</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/20_tapu_durumu.svg" alt="" />
+                            <h6>Tapu Durumu:</h6>
+                            <span className="font-semibold">Kat Mülkiyetli</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/21_kimden.svg" alt="" />
+                            <h6>Kimden:</h6>
+                            <span className="font-semibold">Sahibinden</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/22_takas.svg" alt="" />
+                            <h6>Takas:</h6>
+                            <span className="font-semibold">Hayır</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/23_depozito.svg" alt="" />
+                            <h6>Depozito:</h6>
+                            <span className="font-semibold">100.000 ₺</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/24_bina_tipi.svg" alt="" />
+                            <h6>Bina Tipi:</h6>
+                            <span className="font-semibold">Apartman</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/25_duvar_tipi.svg" alt="" />
+                            <h6>Duvar Tipi:</h6>
+                            <span className="font-semibold">Ateş Tuğla</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/26_yapinin_durumu.svg" alt="" />
+                            <h6>Yapının Durumu:</h6>
+                            <span className="font-semibold">Sıfır</span>
+                          </div>
+                        </div>
+                        <div className="space-y-4 flex flex-col">
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/27_guclendirme.svg" alt="" />
+                            <h6>Güçlendirme:</h6>
+                            <span className="font-semibold">Evet</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/28_zemin_etudu.svg" alt="" />
+                            <h6>Zemin Etüdü:</h6>
+                            <span className="font-semibold">Var</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/29_yenilenmis.svg" alt="" />
+                            <h6>Yenilenmiş:</h6>
+                            <span className="font-semibold">Evet</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/30_tavan_yukseklik.svg" alt="" />
+                            <h6>Tavan Yüksekliği:</h6>
+                            <span className="font-semibold">2.90 m</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/31_giris_yuksekligi.svg" alt="" />
+                            <h6>Giriş Yüksekliği:</h6>
+                            <span className="font-semibold">3.10 m</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/32_imar_durumu.svg" alt="" />
+                            <h6>İmar Durumu:</h6>
+                            <span className="font-semibold">İmarlı</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/33_ada.svg" alt="" />
+                            <h6>Ada:</h6>
+                            <span className="font-semibold">144</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/34_parsel.svg" alt="" />
+                            <h6>Parsel:</h6>
+                            <span className="font-semibold">72</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/35_pafta.svg" alt="" />
+                            <h6>Pafta:</h6>
+                            <span className="font-semibold">155</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/36_emsal.svg" alt="" />
+                            <h6>Emsal:</h6>
+                            <span className="font-semibold">0.5</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/37_gabari.svg" alt="" />
+                            <h6>Gabari:</h6>
+                            <span className="font-semibold">0.5</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/38_kask.svg" alt="" />
+                            <h6>Kask Emsal:</h6>
+                            <span className="font-semibold">0.5</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/39_acik_alanm2.svg" alt="" />
+                            <h6>Açık Alan m²:</h6>
+                            <span className="font-semibold">1520</span>
+                          </div>
+                          <div className="inline-flex gap-2 items-center lg:text-base text-sm">
+                            <img className="w-[30px] h-[30px]" src="./view/img/detay-icon/40_kapali_alanm2.svg" alt="" />
+                            <h6>Kapalı Alan m²:</h6>
+                            <span className="font-semibold">1520</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="ilan-aciklamasi" className="py-2 px-4 border bg-white shadow-lg rounded-lg space-y-4 md:space-y-0">
+                    <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">Bu gayrimenkul hakkında</h4>
+                      <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                    </div>
+                    <div className="accordion-content max-md:hidden">
+                      <p className="text-gray-700">
+                        <span className="short-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel urna in nibh convallis fringilla. Nunc ultricies, dui eget faucibus accumsan, diam
+                          massa mollis quam, eu volutpat elit leo sit amet quam. Proin fermentum efficitur sapien at vulputate. Mauris elementum mi eget ante aliquet facilisis.
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos laudantium doloremque. Magnam quibusdam veritatis quaerat ea minima excepturi
+                          dolores dicta tempora, fugiat error deleniti modi consequuntur amet delectus assumenda. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                          Officiis neque esse perferendis voluptas officia distinctio commodi. Officiis officia eos blanditiis voluptatibus! Dolorum dignissimos impedit
+                          doloribus tempora dolores perferendis a porro?
+                        </span>
+                        <span className="full-text hidden">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere libero eu justo hendrerit, eget tincidunt orci scelerisque. Proin nec purus
+                          lorem. Sed elementum, libero id sagittis condimentum, orci sapien ornare sapien, vel feugiat lectus dui sed odio.
+                        </span>
+                      </p>
+                      <button className="read-more-btn text-turuncu underline">Devamını Göster</button>
+                    </div>
+                  </div>
+                  <div className="py-2 px-4 border bg-white shadow-lg rounded-lg">
+                    <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">Kat Planları</h4>
+                      <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                    </div>
+                    <div className="accordion-content max-md:hidden">
+                      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/yatakodasi.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Yatak Odası:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/yatakodasi.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Yatak Odası 1:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/yatakodasi.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Yatak Odası 2:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/oturmaodasi.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Oturma Odası:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/oturmaodasi.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Oturma Odası 1:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/oturmaodasi.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Oturma Odası 2:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/misafirodasi.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Misafir Odası:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/misafirodasi.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Misafir Odası 1:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/misafirodasi.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Misafir Odası 2:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/banyo.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Banyo:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/banyo.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Banyo 1:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/banyo.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Banyo 2:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/tuvalet.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Tuvalet :</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/tuvalet.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Tuvalet 1:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                        <div className="inline-flex items-center gap-2">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/kat-planlari/tuvalet.svg" alt="" />
+                          <p className="text-sm">
+                            <span>Tuvalet 2:</span>
+                            <span>125 m²</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="py-2 px-4 border bg-white shadow-lg rounded-lg space-y-4">
+                    <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">İndirimler ve Promosyonlar</h4>
+                      <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                    </div>
+                    <div className="accordion-content max-md:hidden">
+                      <div className="mt-3 grid md:grid-cols-4 grid-cols-1 gap-5 ">
+                        <div className="bg-[#486078] rounded-lg p-3 text-white space-y-4">
+                          <h3 className="text-xl font-semibold">%12’ye varan indirimler seninle</h3>
+                          <p>İndirimler %100 ödeme ve ipotek ile sınırlı bir daire...</p>
+                          <img className="ml-auto w-[150px] h-[150px]" src="./view/img/gift-box.png" alt="" />
+                        </div>
+                        <div className="bg-[#364B5E] rounded-lg p-3 text-white space-y-4">
+                          <h3 className="text-xl font-semibold">%12’den itibaren aile ipoteği</h3>
+                          <p>İndirimler %100 ödeme ve ipotek ile sınırlı bir daire...</p>
+                          <img className="ml-auto w-[150px] h-[150px]" src="./view/img/gift-box.png" alt="" />
+                        </div>
+                        <div className="bg-[#537DA7] rounded-lg p-3 text-white space-y-4">
+                          <h3 className="text-xl font-semibold">Peşinatsız ipotek fırsatlarını kaçırma</h3>
+                          <p>Peşinatsız bir ev satın alabilirsiniz..</p>
+                          <img className="ml-auto w-[150px] h-[150px]" src="./view/img/gift-box.png" alt="" />
+                        </div>
+                        <div className="bg-[#2B67A1] rounded-lg p-3 text-white space-y-4">
+                          <h3 className="text-xl font-semibold">Geliştiriciden geri ödeme imkanı</h3>
+                          <p>DSK Grup, müşterilerine peşinatsız konut almalarını..</p>
+                          <img className="ml-auto w-[150px] h-[150px]" src="./view/img/gift-box.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="py-2 px-4 border bg-white shadow-lg rounded-lg">
+                    <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">Bu mekân size neler sunuyor?</h4>
+                      <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                    </div>
+                    <div className="accordion-content max-md:hidden">
+                      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                          <span className="text-sm">Araç Şarj İstasyonu</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                          <span className="text-sm">24 Saat Güvenlik</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                          <span className="text-sm">Hidrofor</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                          <span className="text-sm">Araç Şarj İstasyonu</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                          <span className="text-sm">24 Saat Güvenlik</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                          <span className="text-sm">Hidrofor</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                          <span className="text-sm">Araç Şarj İstasyonu</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                          <span className="text-sm">24 Saat Güvenlik</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                          <span className="text-sm">Hidrofor</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                          <span className="text-sm">Araç Şarj İstasyonu</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                          <span className="text-sm">24 Saat Güvenlik</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                          <span className="text-sm">Hidrofor</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                          <span className="text-sm">Araç Şarj İstasyonu</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                          <span className="text-sm">24 Saat Güvenlik</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                          <span className="text-sm">Hidrofor</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                          <span className="text-sm">Araç Şarj İstasyonu</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                          <span className="text-sm">24 Saat Güvenlik</span>
+                        </div>
+                        <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                          <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                          <span className="text-sm">Hidrofor</span>
+                        </div>
+                      </div>
+                      <div className="flex justify-end mt-4">
+                        <button className="py-2 px-5 border border-turuncu text-turuncu rounded-lg open-popup" data-target="popup3">Tümünü Gör</button>
+                      </div>
+                    </div>
+                    <div id="popup3" className="popup-overlay hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+                      <div className="flex items-center justify-center h-full">
+                        <div className="popup-box bg-white w-[1000px] h-[600px] p-5 rounded-lg shadow-lg overflow-y-auto relative">
+                          <button className="close-popup absolute top-3 right-3 text-gray-600 text-xl">✖</button>
+                          <h2 className="text-xl font-semibold mb-3">Bu mekân size neler sunuyor?</h2>
+                          <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                              <span className="text-sm">Araç Şarj İstasyonu</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                              <span className="text-sm">24 Saat Güvenlik</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                              <span className="text-sm">Hidrofor</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                              <span className="text-sm">Araç Şarj İstasyonu</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                              <span className="text-sm">24 Saat Güvenlik</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                              <span className="text-sm">Hidrofor</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                              <span className="text-sm">Araç Şarj İstasyonu</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                              <span className="text-sm">24 Saat Güvenlik</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                              <span className="text-sm">Hidrofor</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                              <span className="text-sm">Araç Şarj İstasyonu</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                              <span className="text-sm">24 Saat Güvenlik</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                              <span className="text-sm">Hidrofor</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                              <span className="text-sm">Araç Şarj İstasyonu</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                              <span className="text-sm">24 Saat Güvenlik</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                              <span className="text-sm">Hidrofor</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                              <span className="text-sm">Araç Şarj İstasyonu</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                              <span className="text-sm">24 Saat Güvenlik</span>
+                            </div>
+                            <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                              <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                              <span className="text-sm">Hidrofor</span>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">Cephe</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/cephe/bati.svg" alt="" />
+                                  <span className="text-sm">Batı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/cephe/dogu.svg" alt="" />
+                                  <span className="text-sm">Doğu</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/cephe/kuzey.svg" alt="" />
+                                  <span className="text-sm">Kuzey</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/cephe/bati.svg" alt="" />
+                                  <span className="text-sm">Güney</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">İç Özellikler</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/adsl.svg" alt="" />
+                                  <span className="text-sm">ADSL</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/ahsapdograma.svg" alt="" />
+                                  <span className="text-sm">Ahşap Doğrama</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/akilliev.svg" alt="" />
+                                  <span className="text-sm">Akıllı Ev</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/hirsizalarmi.svg" alt="" />
+                                  <span className="text-sm">Alarm (Hırsız)</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/yanginalarmi.svg" alt="" />
+                                  <span className="text-sm">Alarm (Yangın)</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/alaturkatuvalet.svg" alt="" />
+                                  <span className="text-sm">Alaturka Tuvalet</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/aluminyumdograma.svg" alt="" />
+                                  <span className="text-sm">Aliminyum Doğrama</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/amerikankapi.svg" alt="" />
+                                  <span className="text-sm">Amerikan Kapı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/amerikanmusluk.svg" alt="" />
+                                  <span className="text-sm">Amerikan Mutfak</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/ankastrefirin.svg" alt="" />
+                                  <span className="text-sm">Ankastre Fırın</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/ankastremutfak.svg" alt="" />
+                                  <span className="text-sm">Ankastre</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/barbeku.svg" alt="" />
+                                  <span className="text-sm">Barbekü</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/beyazesya.svg" alt="" />
+                                  <span className="text-sm">Beyaz Eşya</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/boyali.svg" alt="" />
+                                  <span className="text-sm">Boyalı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/bulasikmakinesi.svg" alt="" />
+                                  <span className="text-sm">Bulaşık Makinesi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/buzdolabi.svg" alt="" />
+                                  <span className="text-sm">Buzdolabı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/kurutmamakinesi.svg" alt="" />
+                                  <span className="text-sm">Çamaşır Kurutma Makinesi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/camasirmakinesi.svg" alt="" />
+                                  <span className="text-sm">Çamaşır Makinesi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/camasirodasi.svg" alt="" />
+                                  <span className="text-sm">Çamaşır Odası</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/celikkapi.svg" alt="" />
+                                  <span className="text-sm">Çelik Kapı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/dusakabin.svg" alt="" />
+                                  <span className="text-sm">Duşakabin</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/duvarkagidi.svg" alt="" />
+                                  <span className="text-sm">Duvar Kağıdı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/ebeveynbanyo.svg" alt="" />
+                                  <span className="text-sm">Ebeveyn Banyosu</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/firin.svg" alt="" />
+                                  <span className="text-sm">Fırın</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/fiberinternet.svg" alt="" />
+                                  <span className="text-sm">Fiber İnternet</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/giyinmeodasi.svg" alt="" />
+                                  <span className="text-sm">Giyinme Odası</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/gommedolap.svg" alt="" />
+                                  <span className="text-sm">Gömme Dolap</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/goruntulutelefon.svg" alt="" />
+                                  <span className="text-sm">Görüntülü Diafon</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/hiltonbanyo.svg" alt="" />
+                                  <span className="text-sm">Hilton Banyo</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/intercomsistemi.svg" alt="" />
+                                  <span className="text-sm">Intercom Sistemi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/isicam.svg" alt="" />
+                                  <span className="text-sm">Isıcam</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/jakuzi.svg" alt="" />
+                                  <span className="text-sm">Jakuzi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/duvarkagidi.svg" alt="" />
+                                  <span className="text-sm">Kartonpiyer</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/kiler.svg" alt="" />
+                                  <span className="text-sm">Kiler</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/klima.svg" alt="" />
+                                  <span className="text-sm">Klima</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/kuvet.svg" alt="" />
+                                  <span className="text-sm">Küvet</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/laminantzemin.svg" alt="" />
+                                  <span className="text-sm">Laminant Zemin</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/marley.svg" alt="" />
+                                  <span className="text-sm">Marley</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/mobilya.svg" alt="" />
+                                  <span className="text-sm">Mobilya</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/ankastremutfak.svg" alt="" />
+                                  <span className="text-sm">Mutfak (Ankastre)</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/laminantmutfak.svg" alt="" />
+                                  <span className="text-sm">Mutfak (Laminant)</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/mutfakdogalgaz.svg" alt="" />
+                                  <span className="text-sm">Mutfak Doğalgazı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/panjurjaluzi.svg" alt="" />
+                                  <span className="text-sm">Panjur / Jaluzi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/parke.svg" alt="" />
+                                  <span className="text-sm">Parke Zemin</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/pvcdograma.svg" alt="" />
+                                  <span className="text-sm">PVC Doğrama</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/seramikzemin.svg" alt="" />
+                                  <span className="text-sm">Seramik Zeminı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/setustuocak.svg" alt="" />
+                                  <span className="text-sm">Set Üstü Ocak</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/spotaydinlatma.svg" alt="" />
+                                  <span className="text-sm">Spot Aydınlatma</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/sofben.svg" alt="" />
+                                  <span className="text-sm">Şofben</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/somine.svg" alt="" />
+                                  <span className="text-sm">Şömine</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/teras.svg" alt="" />
+                                  <span className="text-sm">Teras</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/termosifon.svg" alt="" />
+                                  <span className="text-sm">Termosifon</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/verstiyer.svg" alt="" />
+                                  <span className="text-sm">Vestiyer</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/wifi.svg" alt="" />
+                                  <span className="text-sm">WI-FI</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/fakstelefonhatti.svg" alt="" />
+                                  <span className="text-sm">Faks - Telefon Hattı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/icozellik/yuztanimaparmakizi.svg" alt="" />
+                                  <span className="text-sm">Yüz Tanıma & Parmak İzi</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">Dış Özellikler</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/aracsarjistasyonu.svg" alt="" />
+                                  <span className="text-sm">Araç Şarj İstasyonu</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/24saatguvenlik.svg" alt="" />
+                                  <span className="text-sm">24 Saat Güvenlik</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/apartmangorevlisi.svg" alt="" />
+                                  <span className="text-sm">Apartman Görevlisi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/buharodasi.svg" alt="" />
+                                  <span className="text-sm">Buhar Odası</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/cocukoyunparki.svg" alt="" />
+                                  <span className="text-sm">Çocuk Oyun Parkı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hamam.svg" alt="" />
+                                  <span className="text-sm">Hamam</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/hidrofor.svg" alt="" />
+                                  <span className="text-sm">Hidrofor</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/isiyalitimi.svg" alt="" />
+                                  <span className="text-sm">Isı Yalıtımı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/jenerator.svg" alt="" />
+                                  <span className="text-sm">Jeneratör</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/kablotv.svg" alt="" />
+                                  <span className="text-sm">Kablo TV</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/kamerasistemi.svg" alt="" />
+                                  <span className="text-sm">Kamera Sistemi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/kres.svg" alt="" />
+                                  <span className="text-sm">Kreş</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/mustakilhavuz.svg" alt="" />
+                                  <span className="text-sm">Müstakil Havuzlu</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/sauna.svg" alt="" />
+                                  <span className="text-sm">Sauna</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/sesyalitimi.svg" alt="" />
+                                  <span className="text-sm">Ses Yalıtımı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/siding.svg" alt="" />
+                                  <span className="text-sm">Siding</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/sporsalonu.svg" alt="" />
+                                  <span className="text-sm">Spor Alanı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/sudeposu.svg" alt="" />
+                                  <span className="text-sm">Su Deposu</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/teniskortu.svg" alt="" />
+                                  <span className="text-sm">Tenis Kortu</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/uydu.svg" alt="" />
+                                  <span className="text-sm">Uydu</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/yanginmerdiveni.svg" alt="" />
+                                  <span className="text-sm">Yangın Merdiveni</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/disozellik/acikyuzmehavuzu.svg" alt="" />
+                                  <span className="text-sm">Yüzme Havuzu (Açık)</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">Muhit</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/alisverismerkezi.svg" alt="" />
+                                  <span className="text-sm">Alışveriş Merkezi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/belediye.svg" alt="" />
+                                  <span className="text-sm">Belediye</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/cami.svg" alt="" />
+                                  <span className="text-sm">Cami</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/cemevi.svg" alt="" />
+                                  <span className="text-sm">Cemevi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/denizesifir.svg" alt="" />
+                                  <span className="text-sm">Denize Sıfır</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/eczane.svg" alt="" />
+                                  <span className="text-sm">Eczane</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/eglencemerkezi.svg" alt="" />
+                                  <span className="text-sm">Eğlence Merkezi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/fuar.svg" alt="" />
+                                  <span className="text-sm">Fuar</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/golesifir.svg" alt="" />
+                                  <span className="text-sm">Göle Sıfır</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/hastane.svg" alt="" />
+                                  <span className="text-sm">Hastane</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/havra.svg" alt="" />
+                                  <span className="text-sm">Havra</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/ilkokulortaokul.svg" alt="" />
+                                  <span className="text-sm">İlkokul-Ortaokul</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/itfaiye.svg" alt="" />
+                                  <span className="text-sm">İtfaiye</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/lise.svg" alt="" />
+                                  <span className="text-sm">Lise</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/kilise.svg" alt="" />
+                                  <span className="text-sm">Kilise</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/market.svg" alt="" />
+                                  <span className="text-sm">Market</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/park.svg" alt="" />
+                                  <span className="text-sm">Park</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/plaj.svg" alt="" />
+                                  <span className="text-sm">Plaj</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/polismerkezi.svg" alt="" />
+                                  <span className="text-sm">Polis Merkezi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/saglikocagi.svg" alt="" />
+                                  <span className="text-sm">Sağlık Ocağı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/semtpazari.svg" alt="" />
+                                  <span className="text-sm">Semt Pazarı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/sporsalonu.svg" alt="" />
+                                  <span className="text-sm">Spor Salonu</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/sehirmerkezi.svg" alt="" />
+                                  <span className="text-sm">Şehir Merkezi</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/muhit/universite.svg" alt="" />
+                                  <span className="text-sm">Üniversite</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">Ulaşım</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/anayol.svg" alt="" />
+                                  <span className="text-sm">Anayol</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/avrasyatuneli.svg" alt="" />
+                                  <span className="text-sm">Avrasya Tüneli</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/bogazkoprusu.svg" alt="" />
+                                  <span className="text-sm">Boğaz Köprüleri</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/cadde.svg" alt="" />
+                                  <span className="text-sm">Cadde</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/denizotobusu.svg" alt="" />
+                                  <span className="text-sm">Deniz Otobüsü</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/dolmus.svg" alt="" />
+                                  <span className="text-sm">Dolmuş</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/e-5.svg" alt="" />
+                                  <span className="text-sm">E-5</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/havaalani.svg" alt="" />
+                                  <span className="text-sm">Havaalanı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/iskele.svg" alt="" />
+                                  <span className="text-sm">İskele</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/marmaray.svg" alt="" />
+                                  <span className="text-sm">Marmaray</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/metro.svg" alt="" />
+                                  <span className="text-sm">Metro</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/metrobus.svg" alt="" />
+                                  <span className="text-sm">Metrobüs</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/minibus.svg" alt="" />
+                                  <span className="text-sm">Minibüs</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/otobusduragi.svg" alt="" />
+                                  <span className="text-sm">Otobüs Durağı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/sahil.svg" alt="" />
+                                  <span className="text-sm">Sahil</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/teleferik.svg" alt="" />
+                                  <span className="text-sm">Teleferik</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/tem.svg" alt="" />
+                                  <span className="text-sm">TEM</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/tramvay.svg" alt="" />
+                                  <span className="text-sm">Tramvay</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/trenistasyonu.svg" alt="" />
+                                  <span className="text-sm">Tren İstasyonu</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/ulasim/troleybus.svg" alt="" />
+                                  <span className="text-sm">Troleybüs</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">Manzara</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/manzara/bogazmanzarasi.svg" alt="" />
+                                  <span className="text-sm">Boğaz</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/manzara/denizmanzarasi.svg" alt="" />
+                                  <span className="text-sm">Deniz</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/manzara/dogamanzarasi.svg" alt="" />
+                                  <span className="text-sm">Doğa</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/manzara/golmanzarasi.svg" alt="" />
+                                  <span className="text-sm">Göl</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/manzara/havuzmanzarasi.svg" alt="" />
+                                  <span className="text-sm">Havuz</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/manzara/parkyesilalan.svg" alt="" />
+                                  <span className="text-sm">Park & Yeşil Alan</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/manzara/sehirmanzarasi.svg" alt="" />
+                                  <span className="text-sm">Şehir</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">Yakınlık</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/yakinlik/cami.svg" alt="" />
+                                  <span className="text-sm">Cami</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/yakinlik/hastane.svg" alt="" />
+                                  <span className="text-sm">Hastane</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/yakinlik/havaalanınayakin.svg" alt="" />
+                                  <span className="text-sm">Havaalanı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/yakinlik/kilise.svg" alt="" />
+                                  <span className="text-sm">Kilise</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/yakinlik/market.svg" alt="" />
+                                  <span className="text-sm">Market</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/yakinlik/restaurant.svg" alt="" />
+                                  <span className="text-sm">Restoran</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/yakinlik/saglikocagi.svg" alt="" />
+                                  <span className="text-sm">Sağlık Ocağı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/yakinlik/toplutasimayakin.svg" alt="" />
+                                  <span className="text-sm">Toplu Taşıma</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/yakinlik/veteriner.svg" alt="" />
+                                  <span className="text-sm">Veteriner</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">Cephe Özellikleri</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/discephe/ahsapkaplama.svg" alt="" />
+                                  <span className="text-sm">Ahşap Kaplama</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/discephe/btbkaplama.svg" alt="" />
+                                  <span className="text-sm">BTB Kaplama</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/discephe/camgiydirme.svg" alt="" />
+                                  <span className="text-sm">Cam Giydirme</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/discephe/sidingkaplama.svg" alt="" />
+                                  <span className="text-sm">Siding Kaplama</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/discephe/taskaplama.svg" alt="" />
+                                  <span className="text-sm">Taş Kaplama</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/discephe/isiyalitimi.svg" alt="" />
+                                  <span className="text-sm">Isı Yalıtım</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">Engelliye ve Yaşlıya Uygun</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/engelliparkyeri.svg" alt="" />
+                                  <span className="text-sm">Araç Park Yeri</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/engelliasansoru.svg" alt="" />
+                                  <span className="text-sm">Asansör</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/engellibanyo.svg" alt="" />
+                                  <span className="text-sm">Banyo</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/geniskoridor.svg" alt="" />
+                                  <span className="text-sm">Geniş Koridor</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/engellirampa.svg" alt="" />
+                                  <span className="text-sm">Giriş/Rampa</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/engellimerdiven.svg" alt="" />
+                                  <span className="text-sm">Merdiven</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/odakapisi.svg" alt="" />
+                                  <span className="text-sm">Oda Kapısı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/elektrikprizanahtar.svg" alt="" />
+                                  <span className="text-sm">Priz/Elektrik Anahtarı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/engellimerdiven.svg" alt="" />
+                                  <span className="text-sm">Tutamak/Korkuluk</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/engellituvalet.svg" alt="" />
+                                  <span className="text-sm">Tuvalet</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/engelliveyasli/engelliyuzme.svg" alt="" />
+                                  <span className="text-sm">Yüzme Havuzu</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="mt-4 py-2 px-2 border-2 rounded-lg">
+                            <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                              <h4 className="lg:text-xl text-lg font-semibold text-turuncu">Arsa Genel Özellikler</h4>
+                              <i className="ri-arrow-down-s-line ri-lg lg:hidden block"></i>
+                            </div>
+                            <div className="accordion-content max-md:hidden">
+                              <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mt-4">
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/arsa-ozellik/ifrazli.svg" alt="" />
+                                  <span className="text-sm">İfrazlı</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/arsa-ozellik/parselli.svg" alt="" />
+                                  <span className="text-sm">Parselli</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/arsa-ozellik/projeli.svg" alt="" />
+                                  <span className="text-sm">Projeli</span>
+                                </div>
+                                <div className="flex items-center gap-2 py-1 px-2 rounded-full">
+                                  <img className="w-[30px] h-[30px]" src="./view/icon/arsa-ozellik/koseparsel.svg" alt="" />
+                                  <span className="text-sm">Köşe parsel</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div className="py-2 px-4 border bg-white shadow-lg rounded-lg space-y-4">
+                    <div className="flex items-center justify-between cursor-pointer accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">Ek hizmet ister misiniz</h4>
+                      <i className="ri-arrow-down-s-line ri-lg"></i>
+                    </div>
+                    <div className="accordion-content max-md:hidden">
+                      <div className="mt-3 grid lg:grid-cols-4 grid-cols-1 gap-5">
+                        <div className="bg-[#486078] rounded-lg p-3 text-white space-y-4">
+                          <h3 className="text-xl font-semibold">%12’ye varan indirimler seninle</h3>
+                          <p>İndirimler %100 ödeme ve ipotek ile sınırlı bir daire...</p>
+                          <img className="ml-auto w-[150px] h-[150px]" src="./view/img/gift-box.png" alt="" />
+                        </div>
+                        <div className="bg-[#364B5E] rounded-lg p-3 text-white space-y-4">
+                          <h3 className="text-xl font-semibold">%12’den itibaren aile ipoteği</h3>
+                          <p>İndirimler %100 ödeme ve ipotek ile sınırlı bir daire...</p>
+                          <img className="ml-auto w-[150px] h-[150px]" src="./view/img/gift-box.png" alt="" />
+                        </div>
+                        <div className="bg-[#537DA7] rounded-lg p-3 text-white space-y-4">
+                          <h3 className="text-xl font-semibold">Peşinatsız ipotek fırsatlarını kaçırma</h3>
+                          <p>Peşinatsız bir ev satın alabilirsiniz..</p>
+                          <img className="ml-auto w-[150px] h-[150px]" src="./view/img/gift-box.png" alt="" />
+                        </div>
+                        <div className="bg-[#2B67A1] rounded-lg p-3 text-white space-y-4">
+                          <h3 className="text-xl font-semibold">Geliştiriciden geri ödeme imkanı</h3>
+                          <p>DSK Grup, müşterilerine peşinatsız konut almalarını..</p>
+                          <img className="ml-auto w-[150px] h-[150px]" src="./view/img/gift-box.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="konum" className="py-2 px-4 border bg-white shadow-lg rounded-lg space-y-4">
+                    <div className="flex items-center justify-between cursor-pointer accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">Konumu ve Sokak Görünümü</h4>
+                      <i className="ri-arrow-down-s-line ri-lg"></i>
+                    </div>
+                    <div className="mt-4 accordion-content max-md:hidden">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.8885055538!2d28.84737317241579!3d41.00546324292252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1741194549759!5m2!1str!2str"
+                        className="w-full h-[500px]"
+                        style={{border: 0}}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div className="py-2 px-4 border bg-white shadow-lg rounded-lg">
+                    <div className="flex items-center justify-between cursor-pointer md:cursor-auto accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">Yıldız Mahallesi İçin Önemli Yerler</h4>
+                      <i className="ri-arrow-down-s-line ri-lg"></i>
+                    </div>
+                    <div className="accordion-content max-md:hidden">
+                      <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 mt-4">
+                        <div>
+                          <h5 className="py-2 px-2 bg-[#F4F4F4]">Ulaşım</h5>
+                          <div className="space-y-2 mt-2">
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h5 className="py-2 px-2 bg-[#F4F4F4]">Marketler</h5>
+                          <div className="space-y-2 mt-2">
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h5 className="py-2 px-2 bg-[#F4F4F4]">Sağlık Kurumları</h5>
+                          <div className="space-y-2 mt-2">
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h5 className="py-2 px-2 bg-[#F4F4F4]">Eğitim Kurumları</h5>
+                          <div className="space-y-2 mt-2">
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h5 className="py-2 px-2 bg-[#F4F4F4]">Kafe / Restorantlar</h5>
+                          <div className="space-y-2 mt-2">
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h5 className="py-2 px-2 bg-[#F4F4F4]">Alışberiş Merkezleri</h5>
+                          <div className="space-y-2 mt-2">
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h5 className="py-2 px-2 bg-[#F4F4F4]">Eğlence Yerleri</h5>
+                          <div className="space-y-2 mt-2">
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h5 className="py-2 px-2 bg-[#F4F4F4]">Dini Merkezler</h5>
+                          <div className="space-y-2 mt-2">
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h5 className="py-2 px-2 bg-[#F4F4F4]">Spor Tesisleri</h5>
+                          <div className="space-y-2 mt-2">
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <p>Söğütlüçeşme Metro</p>
+                              <span className="text-gray-400">1.5 Km</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="text-right mt-3">
+                        <button className="py-2 px-5 border border-turuncu text-turuncu rounded-lg open-popup text-right" data-target="popup4">Tümünü Gör</button>
+                      </div>
+                      <div id="popup4" className="popup-overlay hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+                        <div className="flex items-center justify-center h-full">
+                          <div className="popup-box bg-white w-[1000px] h-[600px] p-5 rounded-lg shadow-lg overflow-y-auto relative">
+                            <button className="close-popup absolute top-3 right-3 text-gray-600 text-xl">✖</button>
+                            <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 mt-4">
+                              <div>
+                                <h5 className="py-2 px-2 bg-[#F4F4F4]">Ulaşım</h5>
+                                <div className="space-y-2 mt-2">
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <h5 className="py-2 px-2 bg-[#F4F4F4]">Marketler</h5>
+                                <div className="space-y-2 mt-2">
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <h5 className="py-2 px-2 bg-[#F4F4F4]">Sağlık Kurumları</h5>
+                                <div className="space-y-2 mt-2">
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <h5 className="py-2 px-2 bg-[#F4F4F4]">Eğitim Kurumları</h5>
+                                <div className="space-y-2 mt-2">
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <h5 className="py-2 px-2 bg-[#F4F4F4]">Kafe / Restorantlar</h5>
+                                <div className="space-y-2 mt-2">
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <h5 className="py-2 px-2 bg-[#F4F4F4]">Alışberiş Merkezleri</h5>
+                                <div className="space-y-2 mt-2">
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <h5 className="py-2 px-2 bg-[#F4F4F4]">Eğlence Yerleri</h5>
+                                <div className="space-y-2 mt-2">
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <h5 className="py-2 px-2 bg-[#F4F4F4]">Dini Merkezler</h5>
+                                <div className="space-y-2 mt-2">
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div>
+                                <h5 className="py-2 px-2 bg-[#F4F4F4]">Spor Tesisleri</h5>
+                                <div className="space-y-2 mt-2">
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                  <div className="flex items-center justify-between">
+                                    <p>Söğütlüçeşme Metro</p>
+                                    <span className="text-gray-400">1.5 Km</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="video" className="py-2 px-4 border bg-white shadow-lg rounded-lg space-y-4">
+                    <div className="flex items-center justify-between cursor-pointer accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">Video</h4>
+                      <i className="ri-arrow-down-s-line ri-lg"></i>
+                    </div>
+                    <div className="mt-4 accordion-content max-md:hidden w-full h-[500px]">
+                      <img className="w-full h-full" src="./view/img/video.png" alt="" />
+                    </div>
+                  </div>
+                  <div id="sanal-tur" className="py-2 px-4 border bg-white shadow-lg rounded-lg space-y-4">
+                    <div className="flex items-center justify-between cursor-pointer accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">Sanal Tur</h4>
+                      <i className="ri-arrow-down-s-line ri-lg"></i>
+                    </div>
+                    <div className="mt-4 accordion-content max-md:hidden w-full h-[500px]">
+                      <img className="w-full h-full" src="./view/img/video.png" alt="" />
+                    </div>
+                  </div>
+                  <div className="p-2 border bg-white shadow-lg rounded-lg">
+                    <div className="flex flex-col lg:flex-row gap-5">
+                      <div className="lg:w-2/3">
+                        <img className="w-full h-full" src="./view/img/randevu.png" alt="" />
+                      </div>
+                      <div className="space-y-4 lg:w-1/3">
+                        <h4 className="text-2xl font-semibold">Randevu Talebi</h4>
+                        <div id="calendar" className="w-full rounded-lg"></div>
+                        <div className="space-y-2">
+                          <h5 className="text-xl font-medium">Tur Türü</h5>
+                          <div className="grid grid-cols-2 gap-2">
+                            <button className="py-1.5 px-4 text-white rounded-lg bg-mavi text-sm focus:border-2 border-black">Kişisel Tur</button>
+                            <button className="py-1.5 px-4 text-white rounded-lg bg-mavi text-sm focus:border-2 border-black">Görüntülü Tur</button>
+                          </div>
+                          <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="Ad Soyad" />
+                          <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="Telefon" />
+                          <input type="text" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" name="" id="" placeholder="E-Posta" />
+                          <textarea name="" className="border rounded-lg py-1.5 px-3 bg-inherit focus:outline-none w-full" placeholder="Mesaj" id="" rows="4"></textarea>
+                          <div className="inline-flex items-center gap-2">
+                            <input type="checkbox" name="" id="" />
+                            <p className="text-xs">Bu formu göndererek Kullanım Şartlarını kabul ediyorum.</p>
+                          </div>
+                          <button className="py-1.5 w-full bg-turuncu rounded-lg text-white text-sm">Randevu Al</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <h4 className="lg:text-2xl text-lg font-semibold">Kullanıcı Yorumları</h4>
+                      <div className="inline-flex gap-4">
+                        <button className="py-1.5 px-4 rounded-lg bg-turuncu text-white lg:text-sm text-xs whitespace-nowrap">Değerlendir</button>
+                        <button className="py-1.5 px-4 rounded-lg lg:text-sm text-xs whitespace-nowrap">Tümünü Gör</button>
+                      </div>
+                    </div>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-4">
+                      <div className="p-3 border bg-white shadow-lg rounded-lg">
+                        <div className="flex items-center gap-3">
+                          <img className="w-[80px] h-[80px] object-cover rounded-lg" src="./view/img/yorum-pp.png" alt="" />
+                          <div className="space-y-2 text-sm">
+                            <h5 className="text-sm font-medium">Kaç M2 Yazılım & Reklam Ajansı</h5>
+                            <p>
+                              <i className="ri-map-pin-line ri-lg"></i>
+                              <span>İstanbul</span>
+                            </p>
+                            <div className="flex items-center gap-2">
+                              <span>
+                                <i className="ri-star-fill text-[#FFD45E]"></i>
+                                4.9
+                              </span>
+                              <span>-</span>
+                              <span>(100)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mt-2 space-y-2">
+                          <h6 className="text-lg font-semibold">O kadar harika bir firma ki...</h6>
+                          <p className="text-sm">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                            a type specimen book. 
+                          </p>
+                        </div>
+                      </div>
+                      <div className="p-3 border bg-white shadow-lg rounded-lg">
+                        <div className="flex items-center gap-3">
+                          <img className="w-[80px] h-[80px] object-cover rounded-lg" src="./view/img/yorum-pp.png" alt="" />
+                          <div className="space-y-2 text-sm">
+                            <h5 className="text-sm font-medium">Kaç M2 Yazılım & Reklam Ajansı</h5>
+                            <p>
+                              <i className="ri-map-pin-line ri-lg"></i>
+                              <span>İstanbul</span>
+                            </p>
+                            <div className="flex items-center gap-2">
+                              <span>
+                                <i className="ri-star-fill text-[#FFD45E]"></i>
+                                4.9
+                              </span>
+                              <span>-</span>
+                              <span>(100)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mt-2 space-y-2">
+                          <h6 className="text-lg font-semibold">O kadar harika bir firma ki...</h6>
+                          <p className="text-sm">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                            a type specimen book. 
+                          </p>
+                        </div>
+                      </div>
+                      <div className="p-3 border bg-white shadow-lg rounded-lg">
+                        <div className="flex items-center gap-3">
+                          <img className="w-[80px] h-[80px] object-cover rounded-lg" src="./view/img/yorum-pp.png" alt="" />
+                          <div className="space-y-2 text-sm">
+                            <h5 className="text-sm font-medium">Kaç M2 Yazılım & Reklam Ajansı</h5>
+                            <p>
+                              <i className="ri-map-pin-line ri-lg"></i>
+                              <span>İstanbul</span>
+                            </p>
+                            <div className="flex items-center gap-2">
+                              <span>
+                                <i className="ri-star-fill text-[#FFD45E]"></i>
+                                4.9
+                              </span>
+                              <span>-</span>
+                              <span>(100)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mt-2 space-y-2">
+                          <h6 className="text-lg font-semibold">O kadar harika bir firma ki...</h6>
+                          <p className="text-sm">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                            a type specimen book. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-2 border bg-white shadow-lg rounded-lg space-y-3">
+                    <div className="flex items-center justify-between cursor-pointer accordion-header">
+                      <h4 className="lg:text-2xl text-lg font-semibold">İnşaat İlerlemesi</h4>
+                      <i className="ri-arrow-down-s-line ri-lg"></i>
+                    </div>
+                    <div className="accordion-content max-md:hidden">
+                      <p>2025’in 1. çeyreği</p>
+                      <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-4">
+                        <img className="rounded-lg" src="./view/img/ilerleme.png" alt="" />
+                        <img className="rounded-lg" src="./view/img/ilerleme.png" alt="" />
+                        <img className="rounded-lg" src="./view/img/ilerleme.png" alt="" />
+                        <img className="rounded-lg" src="./view/img/ilerleme.png" alt="" />
+                        <img className="rounded-lg" src="./view/img/ilerleme.png" alt="" />
+                      </div>
+                      <a href="insaat-ilerlemesi.html" className="underline">Tüm inşaat ilerlemesini görün</a>
+                      <div>
+                        <h5 className="text-lg font-medium">Belgeleme</h5>
+                        <div className="flex items-start gap-4 mt-2">
+                          <div>
+                            <i className="ri-file-pdf-2-fill ri-2x"></i>
+                          </div>
+                          <div className="load-more-container">
+                            <div className="content-list flex flex-col gap-1">
+                              <a href="" className="item hidden">10.04.2024 tarihli yapı ruhsatı (6.aşama)</a>
+                              <a href="" className="item hidden">09.28.2023 tarihli inşaat izni (5.aşama)</a>
+                              <a href="" className="item hidden">Yapı ruhsatı 18.04.2023 (3.aşama)</a>
+                              <a href="" className="item hidden">Yapı ruhsatı 18.04.2023 (3.aşama)</a>
+                              <a href="" className="item hidden">Yapı ruhsatı 18.04.2023 (3.aşama)</a>
+                              <a href="" className="item hidden">Yapı ruhsatı 18.04.2023 (3.aşama)</a>
+                              <a href="" className="item hidden">Yapı ruhsatı 18.04.2023 (3.aşama)</a>
+                              <a href="" className="item hidden">Yapı ruhsatı 18.04.2023 (3.aşama)</a>
+                              <a href="" className="item hidden">Yapı ruhsatı 18.04.2023 (3.aşama)</a>
+                              <a href="" className="item hidden">Yapı ruhsatı 18.04.2023 (3.aşama)</a>
+                              <button className="load-more-btn text-xs underline decoration-[#FF5A01] text-[#FF5A01] text-left">Tümünü Gör</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <h4 className="lg:text-2xl font-semibold">Temsilcinin Diğer İlanları</h4>
+                      <a href="danisman-detay_advisor-detail.html" className="text-sm">Tümünü Gör</a>
+                    </div>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-4">
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <h4 className="lg:text-2xl font-semibold">Sizin İçin Önerilen Evler</h4>
+                      <a href="" className="text-sm">Tümünü Gör</a>
+                    </div>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-4">
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <h4 className="lg:text-2xl font-semibold">Yakındaki Benzer Evler</h4>
+                      <a href="" className="text-sm">Tümünü Gör</a>
+                    </div>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-4">
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <h4 className="lg:text-2xl font-semibold">Yakın Zamanda Satılmış Evler</h4>
+                      <a href="" className="text-sm">Tümünü Gör</a>
+                    </div>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-4">
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-2.5 shadow-lg border border-black">
+                        <div className="swiper mySwiper">
+                          <div className="swiper-wrapper mb-8">
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="swiper-slide">
+                              <div className="relative">
+                                <img className="rounded-lg w-full h-[270px]" src="./view/img/ilan-gorsel.png" alt="" />
+                                <div className="absolute inset-0 h-full flex flex-col justify-between bg-black/40 rounded-lg hover:opacity-0 transition-all delay-150">
+                                  <div className="flex items-center gap-1 flex-wrap p-2">
+                                    <div className="text-white text-[9px] bg-[#486078] py-1 px-2 rounded-full">Fiyat Düştü</div>
+                                    <div className="text-white text-[9px] bg-[#364B5E] py-1 px-2 rounded-full">Apartman</div>
+                                    <div className="text-white text-[9px] bg-[#537DA7] py-1 px-2 rounded-full">Yeni</div>
+                                    <div className="text-white text-[9px] bg-[#2B67A1] py-1 px-2 rounded-full">3D Modelleme</div>
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="space-y-2">
+                                      <div className="flex items-center gap-2 mt-4 text-white text-xs">
+                                        <img className="w-[15px] h-[15px]" src="./view/img/fidan.png" alt="" />
+                                        <span>85 Fidan</span>
+                                      </div>
+                                      <div className="flex items-center justify-between">
+                                        <div className="inline-block py-1 px-2 text-white rounded-full bg-[#FF5A01] text-xs">
+                                          <span>1.330.000₺</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                          <a href="" className="text-white"><i className="ri-heart-line ri-lg"></i></a>
+                                          <a href="" className="text-white"><i className="ri-corner-up-right-line ri-lg"></i></a>
+                                        </div>
+                                      </div>
+                                      <p className="text-white text-xs">Estetik ve Fonksiyonellikte Harika Mobilyalarla Dolu Yepyeni Katalog Sizi Bekliyor!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="swiper-button-next" style={{color: "white"}}></div>
+                          <div className="swiper-button-prev" style={{color: "white"}}></div>
+                          <div className="swiper-pagination"></div>
+                        </div>
+      
+                        <div className="pt-0.5 ml-1 flex items-scenter justify-between">
+                          <div className="flex items-center gap-2 relative menu-container cursor-pointer">
+                            <img className="w-[24px] h-[24px] rounded-full" src="./view/img/pp.png" alt="" />
+                            <span className="text-sm">Demiral Proje Mimarlık</span>
+                            <div className="absolute left-0 top-5 mt-2 w-[400px] bg-white shadow-lg rounded-lg hidden menu z-50 p-2">
+                              <div className="grid grid-cols-3 gap-1">
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                                <img src="./view/img/profil.png" alt="" />
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <img className="rounded-full -mt-10 w-[100px] h-[100px]" src="./view/img/ilan-pp.png" alt="" />
+                                <div className="text-sm mt-2">
+                                  <div>
+                                    <h4>Yaşar Tan</h4>
+                                    <span className="block text-[#FF5A01]">kacm2/yaşartan</span>
+                                  </div>
+                                  <div className="">
+                                    <h4>Bursa/ Osmangazi</h4>
+                                    <h4>Gayrimenkul Danışmanı</h4>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35</h6>
+                                  <span className="font-medium text-xs">Satılık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">60</h6>
+                                  <span className="font-medium text-xs">Kiralık</span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">95</h6>
+                                  <span className="font-medium text-xs">
+                                    Aktif
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">35 M</h6>
+                                  <span className="font-medium text-xs">
+                                    En Yüksek
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">145 M</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Satış
+                                  </span>
+                                </div>
+                                <div className="h-5 w-[1px] bg-gray-300"></div>
+                                <div className="text-center">
+                                  <h6 className="text-sm font-medium">150</h6>
+                                  <span className="font-medium text-xs">
+                                    Toplam
+                                    <br />
+                                    Portföy
+                                  </span>
+                                </div>
+                              </div>
+                              <div>
+                                <p className="text-center mt-4">
+                                  <i className="ri-star-fill text-yellow-400 mr-2"></i>
+                                  4.9 Değerlendirme
+                                </p>
+                              </div>
+                              <div className="flex items-center justify-center gap-5 mt-5">
+                                <button className="py-2 px-5 bg-turuncu rounded-lg text-white text-sm">Takip Et</button>
+                                <button className="py-2 px-5 border border-turuncu rounded-lg text-turuncu text-sm">0555 555 55 55</button>
+                              </div>
+                              <p className="text-gray-400 text-sm mt-6 text-center">Yukarıda yer alan bilgilerde Gayrimenkul Danışmanı’nın beyanları esas alınmıştır.</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <p>
+                              <i className="ri-thumb-up-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                            <p>
+                              <i className="ri-eye-line ri-lg"></i>
+                              <span>100</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      <Footer />
+    </>
+  );
+};
+
+export default Duzenleme;

@@ -413,7 +413,7 @@ const RealEstateListings = () => {
     }
 
     return (
-        <section className="container mx-auto py-16 px-5 lg:px-0">
+        <section className="container mx-auto py-16 px-36">
             <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5">
                 {gridItems}
             </div>

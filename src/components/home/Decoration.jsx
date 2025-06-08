@@ -1,6 +1,6 @@
 export default function Decoration() {
     return (
-        <section className="container mx-auto py-16 px-5 lg:px-0">
+        <section className="container mx-auto py-16 px-32">
             <div className="columns-2 md:columns-3 lg:columns-5 gap-4">
                 <div className="mb-4 break-inside-avoid relative">
                     <button

@@ -102,7 +102,7 @@ const RealEstateSearch = () => {
                 {/* Image Carousel */}
                 <div className="relative">
                     <img
-                        className="w-full h-[270px] object-cover"
+                        className="w-full h-[200px] object-cover"
                         src={property.images[currentImageIndex]}
                         alt={property.title}
                     />
@@ -135,11 +135,11 @@ const RealEstateSearch = () => {
                 {/* Property Details */}
                 <div className="p-4 space-y-2">
                     <div className="flex items-center justify-between">
-            <span className="text-xl font-semibold">
-              {property.price} {property.currency}
-            </span>
+                        <span className="text-xl font-semibold">
+                            {property.price} {property.currency}
+                        </span>
                         <div className="flex items-center gap-2">
-                            <button className="text-gray-600 hover:text-turuncu">
+                            <button className="text-gray-600 hover:text-orange-500">
                                 <Share size={20} />
                             </button>
                             <button className="text-gray-600 hover:text-red-500">
@@ -152,15 +152,15 @@ const RealEstateSearch = () => {
                     <p className="text-sm text-gray-500 line-clamp-2">{property.description}</p>
 
                     <div className="flex flex-wrap items-center gap-2 pt-2">
-            <span className="py-1 px-2 rounded-md text-xs border border-gray-400 bg-gray-50">
-              {property.type}
-            </span>
                         <span className="py-1 px-2 rounded-md text-xs border border-gray-400 bg-gray-50">
-              {property.rooms}
-            </span>
+                            {property.type}
+                        </span>
                         <span className="py-1 px-2 rounded-md text-xs border border-gray-400 bg-gray-50">
-              {property.area}
-            </span>
+                            {property.rooms}
+                        </span>
+                        <span className="py-1 px-2 rounded-md text-xs border border-gray-400 bg-gray-50">
+                            {property.area}
+                        </span>
                     </div>
                 </div>
             </div>
@@ -317,7 +317,7 @@ const RealEstateSearch = () => {
             </div>
 
             {/* Apply Button */}
-            <button className="w-full bg-turuncu text-white py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors">
+            <button className="w-full bg-orange-500 text-white py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors">
                 Filtrele
             </button>
         </div>
@@ -325,7 +325,7 @@ const RealEstateSearch = () => {
 
     return (
         <div className="min-h-screen bg-gray-50">
-            <div className="container mx-auto px-4 py-6">
+            <div className="container mx-auto px-32 py-6">
                 {/* Header */}
                 <div className="mb-6">
                     <h1 className="text-2xl font-bold text-gray-800 mb-4">Emlak Arama</h1>
@@ -333,7 +333,7 @@ const RealEstateSearch = () => {
                     {/* Mobile Filter Button */}
                     <button
                         onClick={() => setShowMobileFilters(true)}
-                        className="md:hidden w-full bg-turuncu text-white py-3 rounded-lg font-medium flex items-center justify-center gap-2"
+                        className="md:hidden w-full bg-orange-500 text-white py-3 rounded-lg font-medium flex items-center justify-center gap-2 mb-4"
                     >
                         <Filter size={20} />
                         Filtreler
@@ -376,24 +376,10 @@ const RealEstateSearch = () => {
                             className="py-2 px-3 border rounded-lg w-32"
                         />
 
-                        <button className="bg-turuncu text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                        <button className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">
                             <Search size={20} />
                         </button>
                     </div>
-                </div>
-
-                {/* Results Info */}
-                <div className="flex items-center justify-between mb-6">
-                    <p className="text-gray-600">
-                        <span className="font-semibold">1.500</span> sonuç gösteriliyor
-                    </p>
-                    <select className="py-2 px-3 border rounded-lg bg-white">
-                        <option value="">Gelişmiş Sıralama</option>
-                        <option value="price-high">Fiyata göre (Önce en yüksek)</option>
-                        <option value="price-low">Fiyata göre (Önce en düşük)</option>
-                        <option value="date-new">Tarihe göre (Önce en yeni)</option>
-                        <option value="area-big">m²'ye göre (Önce en büyük)</option>
-                    </select>
                 </div>
 
                 {/* Main Content */}
@@ -403,43 +389,52 @@ const RealEstateSearch = () => {
                         <div className="p-4 border-b">
                             <h2 className="font-semibold text-gray-800">Filtreler</h2>
                         </div>
-                        <div className="max-h-[70vh] overflow-y-auto custom-scrollbar">
+                        <div className="max-h-[70vh] overflow-y-auto overflow-x-hidden">
                             <FilterSection />
                         </div>
                     </div>
 
-                    {/* Properties Grid and Map */}
+                    {/* Map and Properties */}
                     <div className="flex-1">
-                        <div className="flex gap-6">
-                            {/* Properties Grid */}
-                            <div className="flex-1">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                                    {properties.map(property => (
-                                        <PropertyCard key={property.id} property={property} />
-                                    ))}
-                                </div>
-
-                                {/* Pagination */}
-                                <div className="flex justify-center gap-2">
-                                    <button className="px-4 py-2 border rounded-lg hover:bg-gray-50">‹</button>
-                                    <button className="px-4 py-2 bg-turuncu text-white rounded-lg">1</button>
-                                    <button className="px-4 py-2 border rounded-lg hover:bg-gray-50">2</button>
-                                    <button className="px-4 py-2 border rounded-lg hover:bg-gray-50">3</button>
-                                    <button className="px-4 py-2 border rounded-lg hover:bg-gray-50">›</button>
+                        {/* Map Section */}
+                        <div className="mb-6">
+                            <div className="bg-gray-200 rounded-lg h-[400px] flex items-center justify-center">
+                                <div className="text-center text-gray-500">
+                                    <MapPin size={48} className="mx-auto mb-2" />
+                                    <p className="text-lg font-medium">Harita Görünümü</p>
+                                    <p className="text-sm">İlanların konumları burada gösterilecek</p>
                                 </div>
                             </div>
+                        </div>
 
-                            {/* Map */}
-                            <div className="hidden lg:block w-1/2">
-                                <div className="sticky top-6">
-                                    <div className="bg-gray-200 rounded-lg h-[600px] flex items-center justify-center">
-                                        <div className="text-center text-gray-500">
-                                            <MapPin size={48} className="mx-auto mb-2" />
-                                            <p>Harita Görünümü</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        {/* Results Info */}
+                        <div className="flex items-center justify-between mb-6">
+                            <p className="text-gray-600">
+                                <span className="font-semibold">1.500</span> sonuç gösteriliyor
+                            </p>
+                            <select className="py-2 px-3 border rounded-lg bg-white">
+                                <option value="">Gelişmiş Sıralama</option>
+                                <option value="price-high">Fiyata göre (Önce en yüksek)</option>
+                                <option value="price-low">Fiyata göre (Önce en düşük)</option>
+                                <option value="date-new">Tarihe göre (Önce en yeni)</option>
+                                <option value="area-big">m²'ye göre (Önce en büyük)</option>
+                            </select>
+                        </div>
+
+                        {/* Properties Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                            {properties.map(property => (
+                                <PropertyCard key={property.id} property={property} />
+                            ))}
+                        </div>
+
+                        {/* Pagination */}
+                        <div className="flex justify-center gap-2">
+                            <button className="px-4 py-2 border rounded-lg hover:bg-gray-50">‹</button>
+                            <button className="px-4 py-2 bg-orange-500 text-white rounded-lg">1</button>
+                            <button className="px-4 py-2 border rounded-lg hover:bg-gray-50">2</button>
+                            <button className="px-4 py-2 border rounded-lg hover:bg-gray-50">3</button>
+                            <button className="px-4 py-2 border rounded-lg hover:bg-gray-50">›</button>
                         </div>
                     </div>
                 </div>
@@ -457,7 +452,7 @@ const RealEstateSearch = () => {
                                     <X size={24} />
                                 </button>
                             </div>
-                            <div className="h-full overflow-y-auto custom-scrollbar pb-20">
+                            <div className="h-full overflow-y-auto pb-20">
                                 <FilterSection isMobile={true} />
                             </div>
                         </div>

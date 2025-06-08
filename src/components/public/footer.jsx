@@ -3,7 +3,7 @@ import logo from "../../assets/img/logo.png";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#486078] pt-8 text-white">
+        <footer className="bg-[#486078] pt-8 text-white px-28">
             <div className="container mx-auto">
                 <div className="mb-8 border-b md:mb-12">
                     <div className="mx-auto flex flex-wrap items-end justify-between gap-6 px-6 pb-6">
